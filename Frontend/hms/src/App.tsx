@@ -3,6 +3,7 @@ import './App.css';
 import { createTheme, Button, MantineProvider } from '@mantine/core';
 //this below import is for applying the below css to the content...if its not present then css is not applied to the content
 import '@mantine/core/styles.css';
+import AppRoutes from './Routes/AppRoutes';
 
 //I take this theme code form mantine theme...and put my customize theme(color) in that theme
 
@@ -31,14 +32,7 @@ const theme = createTheme({
 function App() {
   return (
     <MantineProvider theme={theme}>
-      <div>
-        <Button variant='gradient'>Hello</Button>
-        <span>a</span>
-      </div>
-
-    
-
-  
+      <AppRoutes/>
     </MantineProvider>
 
     
